@@ -13,6 +13,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 100px;
+  margin-top: 180px
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
