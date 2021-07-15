@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+  background-color: hsl(0, 0%, 81%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container {
+  height: 100vh;
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 300px 270px;
+  grid-template-areas: 
+  "item1 item1 item2 item5"
+  "item3 item4 item4 item5"
+  ;
+}
+
+.container > * {
+  border-radius: 8px;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 30px;
+  margin-right: 15px;
+}
+
+p {
+  color: hsl(0, 0%, 81%);
+  opacity: 70%;
+  line-height: 1.5;
+}
+
+.item_1, .item_2, .item_3, .item_4, .item_5 {
+  padding: 30px;
+}
+
+.item_1 {
+  background-color: hsl(263, 55%, 52%);
+  position: relative;
+  z-index: 1;
+  grid-area: item1;
+  
+}
+
+.item_1 h4, .item_4 h4, .item_2 h4 {
+  color: hsl(210, 46%, 95%);
+  
+} 
+
+.item_3 h5, .item_5 h5 {
+  color: hsl(217, 19%, 35%);
+  opacity: 50%;
+  
+}
+
+.item_3 h4, .item_5 h4 {
+  opacity: 70%;
+  
+}
+
+.item_1 h5, .item_2 h5, .item_4 h5 {
+  color: hsl(0, 0%, 81%);
+  opacity: 50%;
+}
+
+.item_1, .item_2, .item_4 h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.item_3 h2, .item_5 h2 {
+  color: hsl(217, 19%, 35%);
+}
+
+
+.item_2 {
+  background-color: hsl(217, 19%, 35%);
+  grid-area: item2;
+
+}
+
+.item_3, .item_5   {
+  background-color: hsl(0, 0%, 100%);
+  
+}
+.item_3 > p {
+  color: hsl(217, 19%, 35%);
+  opacity: 70%;
+}
+
+.item_5 > p {
+  color: hsl(217, 19%, 35%);
+  opacity: 70%;
+}
+
+.item_4 
+{
+  background-color: hsl(219, 29%, 14%);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 85px;
+  z-index: -1;
+}
+
+
+
+h2 {
+  margin: 20px 0 20px 0;
+}
+
+
+.item_5 {
+  grid-area: item5;
+
+}
+
+
+.item_4 {
+  grid-area: item4;
+
+}
+
+.item_3 {
+  grid-area: item3;
+
+}
+
+
+
+.item_1 .icon {
+  border: 2px solid #A775F1;
+}
+
+.item_4 .icon {
+  border: 2px solid #A775F1;
+}
+
+@media screen and (max-width: 1111px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
